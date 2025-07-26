@@ -1,0 +1,171 @@
+
+        /* --- Variable & Color Palette --- */
+        :root {
+            --primary-blue: #0a74da;
+            --accent-green: #10b981;
+            --dark-bg: #111827; /* Near black */
+            --white-text: #ffffff;
+        }
+
+        /* --- Smooth Scrolling --- */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* --- Animated Gradient Background --- */
+        body {
+            background: linear-gradient(-45deg, var(--dark-bg), #001f3f, var(--dark-bg), #00334e);
+            background-size: 400% 400%;
+            animation: gradient-animation 15s ease infinite;
+            color: var(--white-text);
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        @keyframes gradient-animation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* --- Header and Navigation Styling --- */
+        .navbar {
+            border-bottom: 3px solid var(--primary-blue);
+            box-shadow: 0 4px 15px rgba(10, 116, 218, 0.2);
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: var(--accent-green) !important;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        .nav-link {
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .nav-link:hover {
+            color: var(--accent-green) !important;
+            transform: translateY(-3px);
+            text-shadow: 0 2px 4px rgba(16, 185, 129, 0.4);
+        }
+
+        /* --- Single Page Section Styling --- */
+        .page-section {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* --- 3D Card Effect --- */
+        .card-3d {
+            background-color: rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(10, 116, 218, 0.3);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card-3d:hover {
+            transform: translateY(-10px) perspective(1000px) rotateX(2deg);
+            box-shadow: 0 16px 40px 0 rgba(0, 0, 0, 0.5);
+        }
+
+        .card-3d .card-header {
+            background-color: rgba(10, 116, 218, 0.2);
+        }
+
+        /* --- General Typography --- */
+        h1, h2, h3, h4, h5, h6, p, li, label {
+            color: var(--white-text);
+        }
+
+        h1, h2, h3 {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        /* --- Specific Element Colors --- */
+        .text-primary-blue { color: var(--primary-blue) !important; }
+        .text-accent-green { color: var(--accent-green) !important; }
+        .hr-green { border-color: var(--accent-green); opacity: 0.75; }
+
+        /* --- Profile Image Style --- */
+        .profile-img {
+            border-radius: 50%;
+            border: 5px solid var(--primary-blue);
+            box-shadow: 0 0 25px var(--primary-blue);
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+        }
+        
+        /* --- Skill Bar Styling --- */
+        .progress {
+            height: 25px;
+            background-color: rgba(0,0,0,0.3);
+            border-radius: 15px;
+            border: 1px solid var(--primary-blue);
+            padding: 3px;
+        }
+        .progress-bar {
+            background-color: var(--accent-green);
+            border-radius: 12px;
+            font-weight: bold;
+            color: var(--dark-bg);
+            animation: animate-progress 1.5s ease-out forwards;
+        }
+
+        @keyframes animate-progress {
+            from { width: 0; }
+        }
+
+        /* --- 3D Button --- */
+        .btn-3d {
+            background-color: var(--accent-green);
+            border: none;
+            border-radius: 8px;
+            padding: 12px 24px;
+            color: white;
+            font-weight: bold;
+            position: relative;
+            top: 0;
+            transition: all 0.2s ease-in-out;
+            box-shadow: 0 5px 0 #059669;
+        }
+        .btn-3d:hover {
+            top: 2px;
+            box-shadow: 0 3px 0 #059669;
+        }
+
+        /* --- Form Styling --- */
+        .form-control {
+            background-color: rgba(0,0,0,0.2);
+            border: 1px solid var(--primary-blue);
+            color: var(--white-text);
+        }
+        .form-control:focus {
+            background-color: rgba(0,0,0,0.3);
+            border-color: var(--accent-green);
+            box-shadow: 0 0 10px var(--accent-green);
+            color: var(--white-text);
+        }
+
+        /* --- Footer Styling --- */
+        footer {
+            border-top: 3px solid var(--primary-blue);
+            background-color: var(--dark-bg);
+            box-shadow: 0 -4px 15px rgba(10, 116, 218, 0.2);
+        }

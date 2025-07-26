@@ -1,0 +1,245 @@
+/* --- Base & Variables --- */
+:root {
+    --bg-black: #111827;
+    --component-black: white;
+    --text-light: rgb(201, 194, 195);
+    --neon-green: #0fcc57; /* springgreen */
+    --neon-pink: #FF007F;  /* rose */
+    --neon-blue: #16aae4;   /* deepskyblue */
+}
+/*-- Smooth Scrolling ---*/
+html{
+    scroll-behavior: smooth;
+}
+/* --- Animated Gradient Background --- */ 
+body {
+    background: linear-gradient(-50deg, var(--bg-black), #001f3f, var(--bg-black), #00334e);
+    background-size: 400% 400%;
+    animation: gradient-animation 15s ease infinite;
+    color: var(--bg-black);
+    font-family: 'Roboto Mono', monospace;
+    background-color: var(--bg-black);
+    color: var(--text-light);
+    padding-top: 70px; /* Offset for fixed navbar */
+}
+
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+.color-green { color: var(--neon-green); }
+.color-pink { color: var(--neon-pink); }
+.color-blue { color: var(--neon-blue); }
+
+section {
+    padding: 6rem 0;
+}
+
+.section-title {
+    color: var(--neon-pink);
+    text-shadow: 0 0 10px var(--neon-pink);
+}
+
+/* --- Navigation Bar --- */
+.navbar {
+    background-color: rgba(13, 13, 13, 0.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 3px solid var(--neon-green);
+    transition: background-color 0.3s ease;
+    box-shadow: o 4px 15px rgb(10, 116, 218, 0.2);
+}
+
+.navbar-brand {
+    color: var(--neon-pink) !important;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--accent-green) !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.nav-link {
+    color: var(--text-light) !important;
+    transition: all 0.3s ease, text-shadow 0.3s;
+}
+.nav-link:hover{
+transform: translateY(-3px);
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--neon-pink) !important;
+    text-shadow: 1px 1px 8px var(--neon-pink);
+}
+
+.navbar-toggler {
+    border-color: var(--neon-green);
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 255, 127, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* --- Home Section --- */
+#home {
+    min-height: 100vh;
+    background-color: transparent;
+    color: #fff;
+}
+
+#home h1 {
+    font-size: 2.5rem;
+}
+/*-- william typewriter --*/
+.williamTypewriter{
+text-align: center;
+  font-family: monospace;
+  font-size: 28px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 4s steps(30) forwards;
+  color: var(--neon-pink);
+    text-shadow: 0 0 10px var(--neon-pink);
+}
+@keyframes typing {
+  from { width: 0; }
+  to { width: 300px; }
+}
+
+/* Typewriter effect */
+.typewriter {
+  display: inline-block;
+  overflow: hidden; 
+  border-right: .15em solid var(--neon-green); /* The cursor */
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .1em;
+  animation: 
+    typing 3.5s steps(35, end),
+    blink-caret .75s  infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--neon-green); }
+}
+
+
+/* --- Profile / Skills Section --- */
+.card {
+    background-color: var(--bg-black);
+    color: green;
+    border: 3px solid var(--neon-blue);
+    border-radius: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 0 30px var(--neon-blue);
+}
+
+.card-title {
+    margin-bottom: 1.5rem;
+}
+
+.card ul li {
+    padding: 0.3rem 0;
+}
+/* --- Skill Bar Styling --- */
+.progress {
+height: 25px;
+background-color: rgba(192, 44, 44, 0.3);
+border-radius: 15px;
+border: 1px solid var(#348a47);
+padding: 3px;
+}
+.progress-bar {
+background-color: var(#1c0b7a);
+border-radius: 12px;
+font-weight: bold;
+color: var(#111827);
+animation: animate-progress 1.5s ease-out forwards;
+}
+
+@keyframes animate-progress {
+    from { width: 0; }
+ }
+/* --- About Me Section --- */
+.about-me-img {
+    border: 2px solid var(--neon-pink);
+    padding: 10px;
+    box-shadow: 0 0 15px var(--neon-pink);
+    border-radius: 15%;
+   
+}
+
+/* --- Contact Section & Form --- */
+.form-control {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--neon-blue);
+    border-radius: 0;
+    color: var(--text-light);
+    padding-left: 0;
+}
+
+.form-control:focus {
+    background-color: transparent;
+    color: var(--text-light);
+    box-shadow: none;
+    border-color: var(--neon-green);
+}
+
+.form-label {
+    color: var(--neon-blue);
+    font-weight: 700;
+}
+
+/* --- Custom Button --- */
+.btn-custom {
+    background-color: transparent;
+    border: 2px solid var(--neon-pink);
+    color: var(--neon-pink);
+    font-weight: 700;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: var(--neon-pink);
+    color: var(--bg-black);
+    box-shadow: 0 0 15px var(--neon-pink);
+}
+
+/* --- Footer --- */
+footer {
+    background-color: var(--bg-black);
+    border-top: 3px solid var(--neon-green);
+    font-size: 0.9rem;
+    box-shadow: 3px 4px 15px rgba(10, 116, 218, 0.2);
+}
+
+/* --- Media Queries for smaller screens --- */
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 2rem;
+    }
+    .typewriter {
+        font-size: 1rem;
+    }
+    .about-me-img {
+        margin-bottom: 2rem;
+    }
+}

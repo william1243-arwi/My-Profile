@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-dark">
+
+    <!-- Header & Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#home">My Profile</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">My Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+        <!-- About Me Section -->
+        <section id="about" class="page-section container">
+            <div class="row g-5 align-items-center">
+                <aside class="col-lg-4 text-center">
+                    <img src="calvin klein.jpg" alt="My Profile Picture" class="profile-img">
+                </aside>
+                <div class="col-lg-8">
+                    <div class="card-3d p-4 p-md-5">
+                        <h1 class="display-4 text-accent-green">About Me</h1>
+                        <p class="lead text-primary-blue">Developer, Designer, and Lifelong Learner.</p>
+                        <hr class="my-4 hr-green">
+                        <h3>My Journey</h3>
+                        <p>My fascination with technology began with a simple "Hello, World!" and has since evolved into a full-blown passion for building elegant and efficient web solutions. I thrive on challenges and am constantly exploring new frameworks and design principles.</p>
+                        <h3>My Philosophy</h3>
+                        <p>I believe that the best products are born from a deep understanding of user needs, combined with clean, maintainable code. I strive for pixel-perfect design and robust architecture in every project.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="page-section container d-flex align-items-center" style="min-height: 100vh;">
+            <div class="row g-5">
+                <div class="col-lg-8">
+                    <div class="card-3d p-4 p-md-5">
+                        <h1 class="display-4 text-accent-green">Welcome to My World</h1>
+                        <p class="lead text-primary-blue">A creative professional passionate about technology and design.</p>
+                        <hr class="my-4 hr-green">
+                        <p>Hello! I'm a full-stack developer and UI/UX enthusiast with a knack for creating beautiful, functional, and user-centered digital experiences. This website is a small demonstration of my skills, built purely with HTML and CSS.</p>
+                        <a href="#portfolio" class="btn btn-3d mt-3">View My Work</a>
+                    </div>
+                </div>
+                <aside class="col-lg-4">
+                    <div class="card-3d p-4">
+                        <h3 class="mb-3 text-accent-green">Quick Facts</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><strong>Location:</strong> Cyberspace</li>
+                            <li class="mb-2"><strong>Role:</strong> Web Developer</li>
+                            <li class="mb-2"><strong>Interests:</strong> 3D Graphics, AI, Gaming</li>
+                            <li class="mb-2"><strong>Favorite Tech:</strong> CSS, Python, Vue.js</li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- My Skills Section -->
+        <section id="skills" class="page-section container">
+            <h1 class="display-4 text-center mb-5 text-accent-green">My Skills & Expertise</h1>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card-3d p-4">
+                        <h3 class="mb-4 text-primary-blue">Frontend Development</h3>
+                        <div class="mb-3"><p>HTML5 & CSS3</p><div class="progress"><div class="progress-bar" style="width: 95%;">95%</div></div></div>
+                        <div class="mb-3"><p>Bootstrap 5</p><div class="progress"><div class="progress-bar" style="width: 90%;">90%</div></div></div>
+                        <div class="mb-3"><p>UI/UX Design Principles</p><div class="progress"><div class="progress-bar" style="width: 80%;">80%</div></div></div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card-3d p-4">
+                        <h3 class="mb-4 text-primary-blue">Backend & Tools</h3>
+                        <div class="mb-3"><p>Python (Flask/Django)</p><div class="progress"><div class="progress-bar" style="width: 85%;">85%</div></div></div>
+                        <div class="mb-3"><p>SQL & Databases</p><div class="progress"><div class="progress-bar" style="width: 75%;">75%</div></div></div>
+                        <div class="mb-3"><p>Git & GitHub</p><div class="progress"><div class="progress-bar" style="width: 95%;">95%</div></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="page-section container">
+            <h1 class="display-4 text-center mb-5 text-accent-green">My Projects</h1>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-3d h-100">
+                        <div class="card-header" style="background-color: var(--primary-blue);">Project One</div>
+                        <div class="card-body"><h5 class="card-title">E-commerce Platform</h5><p class="card-text">A full-featured e-commerce site with a custom backend, built for performance.</p></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-3d h-100">
+                        <div class="card-header" style="background-color: var(--accent-green);">Project Two</div>
+                        <div class="card-body"><h5 class="card-title">Interactive Data Dashboard</h5><p class="card-text">A dynamic dashboard for visualizing complex data sets using modern libraries.</p></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-3d h-100">
+                        <div class="card-header" style="background-color: var(--primary-blue);">Project Three</div>
+                        <div class="card-body"><h5 class="card-title">Personal Blog Engine</h5><p class="card-text">A lightweight and fast blog built from scratch with a focus on clean typography and SEO.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="page-section container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card-3d p-4 p-md-5">
+                        <h1 class="text-center mb-4 text-primary-blue">Get In Touch</h1>
+                        <p class="text-center mb-5">Have a question or want to work together? Fill out the form below.</p>
+                        <form>
+                            <div class="mb-3"><label for="name" class="form-label">Your Name</label><input type="text" class="form-control" id="name" required></div>
+                            <div class="mb-3"><label for="email" class="form-label">Email Address</label><input type="email" class="form-control" id="email" required></div>
+                            <div class="mb-4"><label for="message" class="form-label">Message</label><textarea class="form-control" id="message" rows="5" required></textarea></div>
+                            <div class="text-center"><button type="submit" class="btn btn-3d">Send Message</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-auto">
+        <div class="container">
+            <p class="mb-0">© 2024 My Profile. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (needed for navbar toggler) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
